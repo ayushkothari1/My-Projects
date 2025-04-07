@@ -1,0 +1,26 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Styling the bulb */
+#light {
+    background-color: wheat;
+    border-radius: 50%;
+}
+
+/* Custom Button Styles */
+.btn {
+    font-size: large;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* You can adjust this if you need more styling on the container */
+.container {
+    background-color: rgb(6, 6, 71);
+    height: 100vh;
+}

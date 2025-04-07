@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  /* background: #4a313128; */
+  width: 100%;
+  height: 100%;
+  min-height: 700px;
+  /* background-image: url(/images/quiz.jpg); */
+  /* background-position: center;
+  background-size: cover; */
+}
+.container h1 {
+  text-align: center;
+  color: darkblue;
+  font-size: 50px;
+}
+
+/* Section1 start from here */
+
+.section1 {
+  width: 100%;
+  height: 100%;
+  margin-top: 35px;
+  /* display: none; */
+}
+
+.rules {
+  padding: 10px;
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  margin-left: 40px;
+  margin-top: 20px;
+  background: blue;
+  border: 1px solid blue;
+  box-shadow: 0 6px 15px rgba(4, 12, 238, 0.22);
+  position: sticky;
+  top: 4px;
+  cursor: pointer;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.start {
+  padding: 10px;
+  font-size: 30px;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  margin-left: 40px;
+  margin-top: 20px;
+  background: red;
+  border: 1px solid red;
+  box-shadow: 0 6px 15px rgba(235, 9, 9, 0.22);
+  position: sticky;
+  top: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 300px;
+  margin-left: 42%;
+}
+
+
+/* section 2 start from here */
+
+.section2 {
+  width: 100%;
+  height: 100%;
+  margin-top: 35px;
+  background: rgb(120, 120, 165);
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: none;
+}
+.section2 h3 {
+  text-align: center;
+  margin-top: 4%;
+  color: blue;
+}
+.section2 ul {
+  margin: 10%;
+}
+.section2 ul li {
+  margin: 20px;
+  margin-top: 40px;
+  list-style-type: none;
+  position: relative;
+  padding-left: 30px;
+}
+
+.section2 ul li::before {
+  content: counter(list-item) ". ";
+  color: blue;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: boldS;
+}
+.got {
+  padding: 10px;
+  margin-left: 15%;
+  border-radius: 10px;
+  width: 100px;
+  background: orange;
+  border: 1px solid orange;
+  box-shadow: 10px 10px 20px rgba(233, 233, 14, 0.22);
+  cursor: pointer;
+}
+
+
+/* section 3 start from here */
+
+.section3 {
+  margin-top: 100px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.section3 p {
+  text-align: center;
+  font-size: 40px;
+  color: rgb(7, 8, 101);
+}
+
+.section3 p span {
+  color: rgb(0, 166, 25);
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.img-box {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  /* justify-content: center; */
+}
+
+.img-box span {
+  color: rgb(15, 1, 5);
+  font-size: 25px;
+}
+
+.img-box img {
+  width: 155px;
+  height: 160px;
+}
+.img-box .tick {
+  height: 30px;
+  width: 30px;
+  margin-top: 50px;
+  margin-left: 2px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.imgT{
+  border-radius: 50%;
+  /* background: green; */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgF{
+  border-radius: 50%;
+  /* background: red; */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.next1 {
+  padding: 10px;
+  margin-left: 45%;
+  border-radius: 10px;
+  width: 100px;
+  background: orange;
+  border: 1px solid orange;
+  box-shadow: 10px 10px 20px rgba(233, 233, 14, 0.22);
+  cursor: pointer;
+  display: none;
+}
+
+
+
+/* .lose start from her */
+
+.lose{
+  color: red;
+  text-align: center;
+  margin-top: 200px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.lose h2{
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+.buttons{
+  display: flex;
+  margin-top: 250px;
+  gap: 100px;
+  justify-content: center;
+}
+
+.again{
+  font-size: 30px;
+  border-radius: 50px;
+  background: darkblue;
+  border: 1px solid blue;
+  color: red;
+  box-shadow: 2px 5px 15px rgba(53, 2, 107, 0.22);
+  cursor: pointer;
+  display: flex;
+  font-weight: bolder;
+  padding: 10px;
+}
+.home{
+  font-size: 30px;
+  border-radius: 20px;
+  color: red;
+  background: yellow;
+  border: 1px solid yellow;
+  box-shadow: 5px 5px 15px rgba(169, 177, 4, 0.22);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  padding: 10px;
+}
+
+
+
+/* Section 4 start from here */
+
+.section4{
+  margin-top: 100px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.section4 p{
+  text-align: center;
+  font-size: 40px;
+  color: rgb(7, 8, 101);
+}
+
+.section4 p span {
+  color: rgb(0, 166, 25);
+}
+
+.next2 {
+  padding: 10px;
+  margin-left: 45%;
+  border-radius: 10px;
+  width: 100px;
+  background: orange;
+  border: 1px solid orange;
+  box-shadow: 10px 10px 20px rgba(233, 233, 14, 0.22);
+  cursor: pointer;
+  display: none;
+}
+.imgT2{
+  border-radius: 50%;
+  /* background: green; */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

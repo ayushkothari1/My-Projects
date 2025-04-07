@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Easy game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+    src="https://kit.fontawesome.com/85a0c3de0e.js"
+    crossorigin="anonymous"
+  ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Easy game</h1>
+      <section class="section1">
+        <button class="rules" onclick="showRules()">Rules</button>
+        <button class="start">Start</button>
+      </section>
+      <section class="section2">
+        <h3>Rules of Game</h3>
+        <ul>
+          <li>Click on right answer.</li>
+          <li>If answer is correct keep playing the game.</li>
+          <li>If any of answer is wrong, you lost the game.</li>
+          <li>You won't get any score, your end goal is to finish the game.</li>
+        </ul>
+        <button class="got">Got It</button>
+      </section>
+      <section class="section3">
+        <p><span>1. </span> Which of these birds can see clearly at night?</p>
+        <div class="options">
+          <div class="img-box">
+            <span class="imgT">(A). </span>
+            <img src="/images/download (1).jpg" alt="" />
+             <div class="tick true none"></div>
+          </div>
+          <div class="img-box">
+            <span class="imgF">(B). </span>
+            <img src="/images/download.jpg" alt="" />
+            <div class="tick none wrong"></div>
+          </div>
+          <div class="img-box">
+            <span class="imgF">(C). </span>
+            <img src="/images/images.jpg" alt="" />
+            <div class="tick none wrong"></div> 
+          </div>
+          <div class="img-box">
+            <span class="imgF">(D). </span>
+            <img
+              src="/images/the-sad-lonely-bird-sitting-on-a-tree-branch-2J6FWY9.jpg"
+              alt=""
+            />
+            <div class="tick none wrong"></div> 
+          </div>
+          </div>
+        <button class="next1">Next</button>
+      </section>
+      <div class="lose">
+        <h2>You lost the game. Better luck next time!</h2>
+        <div class="buttons">
+          <button class="again">Play again</button>
+          <button class="home">Home</button>
+        </div>
+      </div>
+      <div class="section4">
+        <p><span>1. </span> Which of these individuals is a singer?</p>
+        <div class="options">
+          <div class="img-box">
+            <span class="imgF">(A). </span>
+            <img src="/images/download (1).webp" alt="" />
+             <div class="tick wrong none"></div>
+          </div>
+          <div class="img-box">
+            <span class="imgF">(B). </span>
+            <img src="/images/download.webp" alt="" />
+            <div class="tick none wrong"></div>
+          </div>
+          <div class="img-box">
+            <span class="imgT2">(C). </span>
+            <img src="/images/download (2).webp" alt="" />
+            <div class="tick none true2"></div> 
+          </div>
+          <div class="img-box">
+            <span class="imgF">(D). </span>
+            <img
+              src="/images/images (1).jpg"
+              alt=""
+            />
+            <div class="tick none wrong"></div> 
+          </div>
+        </div>
+        <button class="next2">Next</button>
+        </div>
+      </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

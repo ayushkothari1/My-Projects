@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background: rgb(10, 10, 36);
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+    /* background-color: yellow; */
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 500px;
+    height: 60%;
+    min-height: 285px;
+    background-color: rgb(201, 191, 191);
+    text-align: center;
+  }
+  
+  .container h1 {
+    color: red;
+    margin-top: 10px;
+    font-size: 35px;
+  }
+  
+  .calculator {
+    width: 90%;
+    /* background: orange; */
+    height: 80%;
+    margin-left: 25px;
+    margin-top: 20px;
+  }
+  
+  .calculator input {
+    border: 0;
+    outline: 0;
+    font-size: 27px;
+    padding-left: 10px;
+    height: 50px;
+  }
+  
+  .box {
+    /* background: green; */
+    height: 82%;
+    margin-top: 10px;
+  }
+  
+  .box1 {
+    width: 100%;
+    /* height: 20px; */
+    margin-top: 2px;
+  }
+  .box2 {
+    width: 100%;
+    /* height: 20px; */
+  }
+  .box3 {
+    width: 100%;
+    /* height: 20px; */
+  }
+  .box4 {
+    width: 100%;
+    /* height: 20px; */
+  }
+  
+  .button {
+    width: 82px;
+    height: 62px;
+    font-size: 25px;
+    background: transparent;
+    border: 2px solid rgb(90, 7, 7);
+    cursor: pointer;
+  }
+  .button:hover{
+    width: 82.5px;
+    height: 62.5px;
+  }
+  
