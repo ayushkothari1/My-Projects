@@ -5,13 +5,104 @@
   font-family: "poppins", sans-serif;
 }
 
+.game {
+  /* width: 2000px; */
+  height: 1000px;
+  display: flex;
+  /* background: gray; */
+}
 h1 {
-  margin-top: 2%;
+  margin-top: 21;
   text-align: center;
-  font-size: 50px;
+  font-size: 58px;
 }
 
-img {
-  width: 20%;
-  height: 300px;
+.main {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: center;
+  width: 35%;
+  height: 60%;
+  /* background: blue; */
+}
+#red {
+  width: 70%;
+  flex-wrap: wrap;
+  /* height: 200px; */
+  margin-left: 15%;
+  margin-top: 10%;
+  position: absolute;
+  border-radius: 6px;
+  min-height: 400px;
+  min-width: 300px;
+  border: 5px solid black;
+  /* display: none; */
+}
+/* #main-img {
+  border: 5px solid black;
+  width: 60%;
+  border-radius: 6px;
+  margin-left: 15%;
+  margin-top: 10%;
+  position: absolute;
+  min-height: 400px;
+  min-width: 300px;
+} */
+#main-img {
+  border: 5px solid black;
+  position: absolute;
+
+  margin-top: 15%;
+  margin-left: 15%;
+  border-radius: 6px;
+}
+.active {
+  animation: anime 3s forwards;
+}
+@keyframes anime {
+  0% {
+    width: 2%;
+    rotate: 10deg;
+    opacity: 1%;
+  }
+  90% {
+    opacity: 4%;
+  }
+  100% {
+    opacity: 100%;
+    width: 60%;
+    rotate: 360deg;
+    min-height: 400px;
+    min-width: 300px;
+  }
+}
+.options {
+  /* gap: 30%; */
+  width: 56%;
+  /* margin-top: 2%; */
+  margin-left: 10%;
+  /* background: yellow; */
+  /* width: 60%; */
+}
+.first {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10%;
+  margin-top: 5%;
+}
+.second {
+  margin-top: 5%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10%;
+}
+.option-img {
+  height: 230px;
+  width: 200px;
+  border-radius: 6px;
+  border: 5px solid rgb(255, 17, 0);
 }
