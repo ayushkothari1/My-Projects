@@ -104,4 +104,23 @@ h1 {
   width: 200px;
   border-radius: 6px;
   border: 5px solid rgb(255, 17, 0);
+  cursor: pointer;
+}
+#result-msg {
+  text-align: center;
+  font-size: 30px;
+}
+.clicked {
+  pointer-events: none;
+  cursor: default;
+}
+.btn {
+  padding: 8px 12px;
+  font-size: 15px;
+  border-radius: 6px;
+  margin-left: 80%;
+  cursor: pointer;
+  background: rgb(4, 4, 78);
+  color: white;
+  display: none;
 }
