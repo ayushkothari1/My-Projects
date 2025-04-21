@@ -2,8 +2,13 @@ const dino = document.querySelector(".dino");
 const gameOver = document.querySelector(".gameOver");
 const obstacle = document.querySelector(".obstacle");
 const scoreCont = document.querySelector(".scoreCont");
+let audiogo = new Audio("/audio/gameover.mp3");
+let audio = new Audio("/audio/music.mp3");
 let cross = true;
 let score = 0;
+setTimeout(() => {
+  audio.play();
+}, 1000);
 document.onkeydown = function (e) {
   console.log("key code is: ", e.keyCode);
   if (e.keyCode === 38) {
@@ -34,9 +39,14 @@ setInterval(function () {
 
   const offsetX = Math.abs(dx - ox);
   const offsetY = Math.abs(dy - oy);
-  if (offsetX < 93 && offsetY < 52) {
-    gameOver.style.visibility = "visible";
+  if (offsetX < 73 && offsetY < 52) {
+    gameOver.innerHTML = "Game Ove - Reload to play again";
     obstacle.classList.remove("obstacleAni");
+    audiogo.play();
+    audio.pause();
+    setTimeout(() => {
+      audiogo.pause();
+    }, 1000);
   } else if (offsetX < 145 && cross) {
     score++;
     updateScore(score);
@@ -44,8 +54,17 @@ setInterval(function () {
     setTimeout(() => {
       cross = true;
     }, 1000);
+    setTimeout(() => {
+      aniDur = parseFloat(
+        window
+          .getComputedStyle(obstacle, null)
+          .getPropertyValue("animation-duration")
+      );
+      newDur = aniDur - 0.8;
+      obstacle.style.animationDuration = newDur + "s";
+      console.log("new animation duration", newDur);
+    }, 500);
   }
-  console.log(offsetX, offsetY);
 }, 100);
 
 function updateScore() {
