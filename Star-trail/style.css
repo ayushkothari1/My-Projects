@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: #111;
+  overflow: hidden;
+  cursor: none;
+}
+
+.trail {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: fadeShrink 1s forwards;
+  filter: blur(2px);
+}
+
+@keyframes fadeShrink {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+}
