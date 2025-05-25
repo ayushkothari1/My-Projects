@@ -8,3 +8,5 @@ function calculateLoan() {
   monthlyPayment = loanAmountValue / MonthsToPayValue + interest;
   payment.innerHTML = `Monthly Payment:${monthlyPayment}`;
 }
+
+calculateLoan();
