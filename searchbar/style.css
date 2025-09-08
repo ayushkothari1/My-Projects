@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  display: flex;
+  gap: 9.3rem;
+  margin: 10% 0 0 3%;
+}
+li {
+  /* display: block; */
+  margin: 5px 0;
+  font-size: 20px;
+  cursor: pointer;
+  list-style: none;
+}
+li:hover {
+  font-weight: bold;
+}
+.hidden {
+  display: none;
+  position: relative;
+}
+.active-hidden::after {
+  content: "";
+  position: absolute;
+  /* width: 110%; */
+  animation: redline 1s 0.1s ease-in-out forwards;
+  height: 2px;
+  background: red;
+  top: 100%;
+  left: -15.5%;
+}
+
+@keyframes redline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 130%;
+  }
+}
+#search {
+  padding: 8px 10px;
+  border: 2px solid black;
+  border-radius: 3px;
+  margin: 5% 0 0 45%;
+}
+#search::placeholder {
+  font-size: 20px;
+}
