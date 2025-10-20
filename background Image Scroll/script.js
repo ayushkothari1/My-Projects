@@ -9,3 +9,5 @@ function updateImage() {
   bgImage.style.backgroundSize = 160 - window.pageXOffset / 12 + "%";
   console.log(160 - window.pageXOffset / 12 + "%");
 }
+
+// console.log(1 - window.pageXOffset / 800);
