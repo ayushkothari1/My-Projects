@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animation</title>
+
+    <style>
+      body {
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        height: 100vh;
+        background: #111;
+        overflow: hidden;
+      }
+
+      .ball {
+        width: 100px;
+        height: 100px;
+        background: #00ffcc;
+        border-radius: 50%;
+      }
+      .button-box {
+        display: flex;
+        margin-top: 35%;
+        margin-left: 40%;
+        gap: 30px;
+        overflow: hidden;
+      }
+      .button {
+        padding: 8px 10px;
+        color: white;
+        transition: 0.1s;
+        font-size: 20px;
+        border-radius: 6px;
+        background: red;
+      }
+      button:hover {
+        background-color: rgb(181, 17, 17);
+        cursor: pointer;
+        /* font-size: 21px; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ball"></div>
+    <div class="button-box">
+      <button class="button start">start</button>
+      <button class="button stop">Stop</button>
+    </div>
+    <script>
+      const ballEl = document.querySelector(".ball");
+      const startEl = document.querySelector(".start");
+      const stopEl = document.querySelector(".stop");
+      let animation;
+      startEl.addEventListener("click", () => {
+        if (!animation) {
+          animation = ballEl.animate(
+            [
+              { transform: "translateX(0px)" },
+              { transform: "translateX(90vw)" },
+            ],
+            {
+              duration: 1000,
+              direction: "alternate",
+              easing: "ease-in-out",
+              iterations: Infinity,
+            },
+          );
+        } else {
+          animation.play();
+        }
+      });
+      stopEl.addEventListener("click", () => {
+        if (animation) {
+          animation.pause();
+        }
+      });
+    </script>
+  </body>
+</html>
